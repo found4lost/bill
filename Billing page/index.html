@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-searches">
+        <aside class="sidebar">
+            <div class="logo">Uptoskills</div>
+            <ul class="menu">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Search Candidates</a></li>
+                <li><a href="#">Saved Searches</a></li>
+                <li><a href="#">Unlocked Candidates</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Credits & Usage</a></li>
+                <li class="active"><a href="#">Billing</a></li>
+                <li><a href="#">Refer and Earn</a></li>
+            </ul>
+            <button class="contact-sales">Contact Sales</button>
+            <button class="buy-credits">Buy Credits</button>
+        </aside>
+    <div class="container-billing">
+        <div><h1>Billing</h1></div>
+        <div class="billing-profile">
+            <h2>Billing profile</h2>
+            <p>Add your registered GST number and company details that would appear on your future invoices.</p>
+            <button class="gst-btn" id="add-gstin-btn">Add GSTIN number</button>
+        </div>
+        <div class="billing-history">
+            <h2>Billing History</h2>
+            <div class="history-content">
+                <img class="no-history" src="no-history.png" alt="empty" height="200" width="250">
+                <p class="text-history">You don't have any billing history</p>
+                <p>If you purchase the <a href="#" id="credits-plan-link">credits plan</a>, you'll see a history of your payments here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gstin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text-btn"><h2>Add GSTIN Number</h2>
+            <h3>GST Number*</h3></div>
+            <input type="text" id="gstin-input" placeholder="Enter GSTIN Number">
+            <button class="gstin-btn" id="submit-gstin-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
